@@ -1,37 +1,26 @@
-# Hand Gesture Volume Control 🎛️
+# Hand Gesture Volume Control App
 
-Control your system volume using hand gestures with a webcam and Streamlit-based interface.  
-Built with OpenCV, MediaPipe, and Streamlit WebRTC.
+A Streamlit app that uses webcam-based hand gesture recognition to control system volume.
 
+## Features
+- Uses OpenCV and MediaPipe for hand detection.
+- Streamlit WebRTC to show webcam feed in browser.
+- Detects thumb-index finger distance to determine volume.
+- Pinky gesture to activate volume setting.
 
-## 🚀 Features
-
-- Adjust system volume using thumb-index finger distance
-- Lower your pinky finger to confirm the change
-- Real-time webcam feed with hand tracking
-- Works on macOS (osascript-based volume control)
-
-
-## 📦 Requirements
-
-- Python 3.7+
-- Webcam access
-- Streamlit and supporting libraries
-
-
-## 🛠️ Installation
+## Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/hand-gesture-volume-control.git
-cd hand-gesture-volume-control
-
-# Create a virtual environment (optional)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
 pip install -r requirements.txt
+```
 
-# Run the app
+## Running the App
+
+```bash
 streamlit run app.py
+```
+
+## Notes
+- Ensure webcam access is allowed.
+- Works best on macOS for volume control via `osascript`.
+- For other OS, system volume control logic may need to be adapted.
